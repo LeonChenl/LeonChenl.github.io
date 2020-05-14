@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-	<audio src="./src/YouAreTheReason.mp3" controls autoplay></audio>
+	<audio id="music" src="./src/YouAreTheReason.mp3" controls autoplay></audio>
 </head>
 
 <body>
@@ -87,7 +87,7 @@
 	together.setMinutes(50);
 	together.setSeconds(0);
 	together.setMilliseconds(0);
-
+	var audio = document.getElementById('music');
 	if (!document.createElement('canvas').getContext) {
 		var msg = document.createElement("div");
 		msg.id = "errorMsg";
@@ -105,6 +105,7 @@
 		timeElapse(together);
 		setInterval(function () {
 			timeElapse(together);
+			audio.play(); 
 		}, 500);
 
 		adjustCodePosition();
