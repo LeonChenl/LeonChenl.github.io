@@ -67,7 +67,7 @@ body {
 #code {
     float: left;
     width: 440px;
-    margin-top: 60px !important;
+    margin-top: 0px !important;
     height: 400px;
     color: #333;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
@@ -113,4 +113,9 @@ body {
 
 #copyright a {
     color: #666
+}
+#img_arrow {
+    position: absolute;
+    left: 650px;
+    top: 600px;
 }

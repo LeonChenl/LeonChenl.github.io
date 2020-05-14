@@ -127,3 +127,6 @@ function adjustCodePosition() {
 function showLoveU() {
 	$("#loveu").fadeIn(3000)
 };
+function showArrow() {
+	$("#img_arrow").fadeIn(3000)
+};

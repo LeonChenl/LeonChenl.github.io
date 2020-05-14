@@ -14,24 +14,23 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-	<audio id="music" src="./src/YouAreTheReason.mp3" controls autoplay></audio>
+	<audio id="music" src="./src/YouAreTheReason.mp3" autoplay></audio>
 </head>
 
 <body>
+
 <div id="mainDiv">
 	<div id="content">
+		<span class="comments"><font color = #3f7f5f> # Hi，Destiny： </font></span><br/>
 		<div id="code">
-			<span class="comments">##</span><br/>
-
-                        <span class="comments"># Hi，Destiny：</span><br/>
 			<span class="comments"># As a programmer,</span><br/>
-			<span class="comments"># I want to write code to celebrate Valentine's Day in coder's way.</span><br/>
+			<span class="comments"># I want to use coding to celebrate Valentine's Day.</span><br/>
 			<span class="comments">##</span><br/>
 			i = Boy(<span class="string">"liang(xiao shaoye)"</span>);<br/>
 			u = Girl(<span class="string">"huan(Destiny)"</span>);<br/>
-			<span class="comments"># I meet you on new year's day 2020. </span><br/>
+			<span class="comments"># I met you on New Year's day 2020. </span><br/>
 			i.meet(u)<br/>
-			<span class="comments"># Afterwards, I fall in love with you. </span><br/>
+			<span class="comments"># Since then I have fallen in love with you. </span><br/>
 			i.love(u)<br/>
 			<span class="comments"># Jan 11, 2020, You became my girlfriend.</span><br/>
 			u.accepted(i)<br/>
@@ -60,6 +59,9 @@
 			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
 			i.live_happily_forever_with(u)<br/>
 			<span class="comments"># I love you forever.</span><br/>
+		</div>
+		<div id="img_arrow" style="display:none">
+			<img src="./src/arrow.jpg" width="140" height="50">
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
@@ -99,7 +101,11 @@
 	} else {
 		setTimeout(function () {
 			startHeartAnimation();
-		}, 5000);
+		}, 92000);
+
+		setTimeout(function () {
+			showArrow();
+		}, 90000);
 
 		timeElapse(together);
 		setInterval(function () {
