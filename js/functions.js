@@ -78,6 +78,7 @@ function startHeartAnimation() {
 				d.html(c.substring(0, b) + (b & 1 ? "_" : ""));
 				if (b >= c.length) {
 					clearInterval(e)
+					startHeartAnimation();
 				}
 			}, 75)
 		});
@@ -126,4 +127,4 @@ function adjustCodePosition() {
 
 function showLoveU() {
 	$("#loveu").fadeIn(2000)
-};
+};typewriter
